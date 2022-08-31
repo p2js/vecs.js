@@ -22,8 +22,8 @@ two.x = 5            // sets the first component equal to 5
 console.log(two.sts) // logs [5, 0, 5]
   
 let four = vec4(...two.yx, 6, 7) //creates a vec4 with two's components swapped around, then 6 and 7
-four[0] = 4;                  //sets the first component equal to 5
-console.log(four.rgba)       //logs [4, 5, 6, 7]
+four[0] = 4;                     //sets the first component equal to 5
+console.log(four.rgba)           //logs [4, 5, 6, 7]
 ```
 
 ## Possible To-Do List
