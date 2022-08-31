@@ -6,7 +6,15 @@ There are no functions that you can use on them yet, I may implement those soon.
 
 The multi-dimensional `vec` properties currently return a simple array instead of another vector to facilitate accessing the components and using them in the construction of other vectors.
 
-### Example usage
+## Example Usage
+
+#### Importing
+
+```js
+import { vec2, vec4 } from "vecs.js"
+```
+
+#### Vectors and their components
 
 ```js
 let two = vec2(1, 0) // creates a vec2 with components 1 and 0
@@ -18,7 +26,7 @@ four[0] = 4;                  //sets the first component equal to 5
 console.log(four.rgba)       //logs [4, 5, 6, 7]
 ```
 
-### Possible to-do list
+## Possible To-Do List
 
 - port to TS so that they can actually be proper types
 - split the three vectors into separate module files to implement methods
