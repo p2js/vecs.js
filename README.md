@@ -4,8 +4,6 @@ vecs.js is a (currently very rudimentary) Javascript implementation of the three
 As of current this module supports creating 2, 3 and 4 component vectors, as well as using all of the valid names in GLSL for accessing components, with support for swizzling.
 There are no functions that you can use on them yet, I may implement those soon.
 
-The multi-dimensional `vec` properties currently return a simple array instead of another vector to facilitate accessing the components and using them in the construction of other vectors.
-
 ## Example Usage
 
 #### Importing
