@@ -65,10 +65,9 @@ const vec3 = (x, y, z) => {
 }
 
 const vec4 = (x, y, z, w) => {
-    if (x === undefined) return vec3(0, 0, 0);
-    if (y === undefined) return vec3(x, x, x);
-    if (z === undefined) throw error("Not enough data provided for construction");
-    if (w === undefined) throw error("Not enough data provided for construction");
+    if (x === undefined) return vec4(0, 0, 0, 0);
+    if (y === undefined) return vec4(x, x, x, x);
+    if (z === undefined || w === undefined) throw error("Not enough data provided for construction");
     x = Number(x);
     y = Number(y);
     z = Number(z);
