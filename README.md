@@ -9,7 +9,7 @@ There are no functions that you can use on them yet, I may implement those soon.
 #### Importing
 
 ```js
-import { vec2, vec4 } from "vecs.js"
+const { vec2, vec4 } = require("vecs.js");
 ```
 
 #### Vectors and their components
@@ -28,11 +28,10 @@ console.log(vector2.rgba)                        //logs { x: 4, y: 5, z: 6, w: 7
 
 This update to vecs.js adds a couple of new features:
 
-- support for the spread operator in vectors so that they can be used in the definition for other vectors as well as other functions that use a rest paramterer
-- the multidimensional getters now output other vectors instead of arrays
-- the proxies and argument processors have been consolidated into 1
-- support for vector construction with no parameters (will make a vector with 0 as all of its values), or 1 parameter (will make a vector with that parameter as all of its values)
-- proper error handling and argument processing in the construction of the vectors
+- support for the `new` keyword when defining a vector
+- support for strict mode
+- acccess to a new `constructor` property which returns the appropriate vec function
+- support for the `instanceof` operator
 
 ## Possible To-Do List
 
